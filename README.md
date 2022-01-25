@@ -729,6 +729,8 @@ Add try-catch statement to catch three exception types - ArgumentException, Argu
 
 The _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes [derive from the ArgumentException class](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception), therefore the _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes are more specific then the _ArgumentException_ class. When catching multiple exceptions in the same try-catch block, you have to catch the more specific exceptions [before the less specific ones](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch).
 
+If you order your catch blocks so that a less specific exception goes before the more specific ones, the compiler produces the [CS0160 error](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0160).
+
 
 ## Fix Compiler Issues
 
