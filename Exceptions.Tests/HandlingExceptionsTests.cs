@@ -227,6 +227,53 @@
             return HandlingExceptions.DoSomething(i, o, s);
         }
 
+        [TestCase(-11)]
+        [TestCase(11)]
+        public void CatchArgumentException7_ArgumentOutOfRangeException(int i)
+        {
+            string actualResult = HandlingExceptions.CatchArgumentException7(i, "ABC", "123", out string errorMessage);
+
+            Assert.AreEqual("Z029", actualResult);
+            Assert.IsTrue(errorMessage.Contains("i should be in [-10, 10] interval.", StringComparison.InvariantCulture));
+        }
+
+        [Test]
+        public void CatchArgumentException7_O_IsNull_ThrowsArgumentNullException()
+        {
+            string actualResult = HandlingExceptions.CatchArgumentException7(0, null, "123", out string errorMessage);
+
+            Assert.AreEqual("W694", actualResult);
+            Assert.IsTrue(errorMessage.Contains("o is null.", StringComparison.InvariantCulture));
+        }
+
+        [Test]
+        public void CatchArgumentException7_S_IsNull_ThrowsArgumentNullException()
+        {
+            string actualResult = HandlingExceptions.CatchArgumentException7(0, "ABC", null, out string errorMessage);
+
+            Assert.AreEqual("W694", actualResult);
+            Assert.IsTrue(errorMessage.Contains("s is null.", StringComparison.InvariantCulture));
+        }
+
+        [Test]
+        public void CatchArgumentException7_S_IsEmpty_ThrowsArgumentException()
+        {
+            string actualResult = HandlingExceptions.CatchArgumentException7(0, "ABC", string.Empty, out string errorMessage);
+
+            Assert.AreEqual("J954", actualResult);
+            Assert.IsTrue(errorMessage.Contains("s string is empty.", StringComparison.InvariantCulture));
+        }
+
+        [TestCase(-10, ExpectedResult = "-10ABC123")]
+        [TestCase(10, ExpectedResult = "10ABC123")]
+        public string CatchArgumentException7_ReturnsString(int i)
+        {
+            string actualResult = HandlingExceptions.CatchArgumentException7(i, "ABC", "123", out string errorMessage);
+
+            Assert.IsTrue(errorMessage is null);
+            return actualResult;
+        }
+
         private static bool TestArgumentOutOfRangeException(int i)
         {
             if (i < 0)

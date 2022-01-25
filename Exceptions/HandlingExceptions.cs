@@ -44,6 +44,14 @@
             return DoSomething(i, o, s);
         }
 
+        public static string CatchArgumentException7(int i, object o, string s, out string errorMessage)
+        {
+            errorMessage = null;
+
+            // TODO #5-7. Add the try-catch statement to catch three exception types - ArgumentException, ArgumentNullException and ArgumentOutOfRangeException. See README.md for details.
+            return DoSomething(i, o, s);
+        }
+
         public static string DoSomething(int i, object o, string s)
         {
             if (i < -10 || i > 10)

@@ -9,7 +9,7 @@ The task requires .NET 6 SDK installed.
 
 ## Task Description
 
-The task has twenty nine sub-tasks in five sections. Each sub-task is a small coding exercise.
+The task has thirty sub-tasks in five sections. Each sub-task is a small coding exercise.
 
 
 ### ArgumentOutOfRangeException
@@ -570,6 +570,10 @@ Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and nav
 
 Add the code to return the _false_ if an _ArgumentOutOfRangeException_ is thrown.
 
+| Exception Type To Catch     | Return |
+|-----------------------------|--------|
+| ArgumentOutOfRangeException | false  |
+
 1. Add the try-catch statement to catch the _ArgumentOutOfRangeException_.
 
 ```cs
@@ -606,7 +610,11 @@ public static bool CatchArgumentOutOfRangeException1(int i, Func<int, bool> foo)
 
 Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and navigate to the [CatchArgumentOutOfRangeException2](Exceptions/HandlingExceptions.cs#L11) method.
 
-Add the code to return the "K139" string if an _ArgumentOutOfRangeException_ is thrown. Also, assign the _errorMessage_ parameter to an exception error message.
+Add the code to return the "K139" string if an _ArgumentOutOfRangeException_ is thrown. Assign the _errorMessage_ parameter to an exception error message.
+
+| Exception Type To Catch     | Return | errorMessage Parameter                |
+|-----------------------------|--------|---------------------------------------|
+| ArgumentOutOfRangeException | K139   | Assign to an exception error message. |
 
 1. Add the try-catch statement to catch the _ArgumentOutOfRangeException_.
 
@@ -662,18 +670,27 @@ public static string CatchArgumentOutOfRangeException2(int i, object o, string s
 }
 ```
 
+
 #### Subtask 5-3
 
 Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and navigate to the [CatchArgumentNullException3](Exceptions/HandlingExceptions.cs#L19) method.
 
 Add the code to return the "P456" string if an _ArgumentNullException_ is thrown.
 
+| Exception Type To Catch     | Return |
+|-----------------------------|--------|
+| ArgumentException           | P456   |
+
 
 #### Subtask 5-4
 
 Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and navigate to the [CatchArgumentNullException4](Exceptions/HandlingExceptions.cs#L25) method.
 
-Add the code to return the "A732" string if an _ArgumentNullException_ is thrown. Also, assign the _errorMessage_ parameter to an exception error message.
+Add the code to return the "A732" string if an _ArgumentNullException_ is thrown. Assign the _errorMessage_ parameter to an exception error message.
+
+| Exception Type To Catch     | Return | errorMessage Parameter                |
+|-----------------------------|--------|---------------------------------------|
+| ArgumentNullException       | A732   | Assign to an exception error message. |
 
 
 #### Subtask 5-5
@@ -682,13 +699,35 @@ Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and nav
 
 Add the code to return the "0" value if an _ArgumentNullException_ is thrown.
 
+| Exception Type To Catch     | Return |
+|-----------------------------|--------|
+| ArgumentException           | 0      |
+
 
 #### Subtask 5-6
 
 Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and navigate to the [CatchArgumentException6](Exceptions/HandlingExceptions.cs#L39) method.
 
-Add the code to return the "D948" string if an _ArgumentNullException_ is thrown. Also, assign the _errorMessage_ parameter to an exception error message.
+Add the code to return the "D948" string if an _ArgumentNullException_ is thrown. Assign the _errorMessage_ parameter to an exception error message.
 
+| Exception Type To Catch     | Return | errorMessage Parameter                |
+|-----------------------------|--------|---------------------------------------|
+| ArgumentException           | D948   | Assign to an exception error message. |
+
+
+#### Subtask 5-7
+
+Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and navigate to the [CatchArgumentException7](Exceptions/HandlingExceptions.cs#L39) method.
+
+Add try-catch statement to catch three exception types - ArgumentException, ArgumentNullException and ArgumentOutOfRangeException.
+
+| Exception Type To Catch     | Return | errorMessage Parameter                |
+|-----------------------------|--------|---------------------------------------|
+| ArgumentException           | J954   | Assign to an exception error message. |
+| ArgumentNullException       | W694   | Assign to an exception error message. |
+| ArgumentOutOfRangeException | Z029   | Assign to an exception error message. |
+
+The _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes [derive from the ArgumentException class](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception), therefore the _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes are more specific then the _ArgumentException_ class. When catching multiple exceptions, you have to catch the more specific exceptions [before the less specific ones](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch).
 
 
 ## Fix Compiler Issues
