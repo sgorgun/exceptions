@@ -698,7 +698,7 @@ Additional style and code checks are enabled for the projects in this solution t
 If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
 
 
-## Sub-task Checklist
+## Task Checklist
 
 1. Rebuild the solution.
 1. Fix all compiler warnings and errors.
