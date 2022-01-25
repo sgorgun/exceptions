@@ -727,7 +727,7 @@ Add try-catch statement to catch three exception types - ArgumentException, Argu
 | ArgumentNullException       | W694   | Assign to an exception error message. |
 | ArgumentOutOfRangeException | Z029   | Assign to an exception error message. |
 
-The _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes [derive from the ArgumentException class](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception), therefore the _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes are more specific then the _ArgumentException_ class. When catching multiple exceptions, you have to catch the more specific exceptions [before the less specific ones](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch).
+The _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes [derive from the ArgumentException class](https://docs.microsoft.com/en-us/dotnet/api/system.argumentexception), therefore the _ArgumentNullException_ and _ArgumentOutOfRangeException_ classes are more specific then the _ArgumentException_ class. When catching multiple exceptions in the same try-catch block, you have to catch the more specific exceptions [before the less specific ones](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch).
 
 
 ## Fix Compiler Issues
