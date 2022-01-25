@@ -749,7 +749,7 @@ If a compiler error or warning message is not clear, [review errors details](htt
 
 ## See also
 
-C# Programming Guide
+* C# Programming Guide
   * [Exception Handling](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/exception-handling)
 * C# Language Reference
   * [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch)
