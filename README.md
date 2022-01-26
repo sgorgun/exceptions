@@ -1,8 +1,8 @@
-﻿# Exceptions
+# Exceptions
 
 Beginner level task for practicing throwing and handling exceptions.
 
-Estimated time to complete the task - 2h.
+Estimated time to complete the task - 3h.
 
 The task requires .NET 6 SDK installed.
 
