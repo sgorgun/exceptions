@@ -697,7 +697,7 @@ Add the code to return the "A732" string if an _ArgumentNullException_ is thrown
 
 Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and navigate to the [CatchArgumentException5](Exceptions/HandlingExceptions.cs#L33) method.
 
-Add the code to return the "0" value if an _ArgumentNullException_ is thrown.
+Add the code to return the "0" value if an _ArgumentException_ is thrown.
 
 | Exception Type To Catch     | Return |
 |-----------------------------|--------|
@@ -708,7 +708,7 @@ Add the code to return the "0" value if an _ArgumentNullException_ is thrown.
 
 Open the [HandlingExceptions.cs](Exceptions/HandlingExceptions.cs) file, and navigate to the [CatchArgumentException6](Exceptions/HandlingExceptions.cs#L39) method.
 
-Add the code to return the "D948" string if an _ArgumentNullException_ is thrown. Assign the _errorMessage_ parameter to an exception error message.
+Add the code to return the "D948" string if an _ArgumentException_ is thrown. Assign the _errorMessage_ parameter to an exception error message.
 
 | Exception Type To Catch     | Return | errorMessage Parameter                |
 |-----------------------------|--------|---------------------------------------|
