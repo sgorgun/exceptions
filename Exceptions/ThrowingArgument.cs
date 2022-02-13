@@ -10,13 +10,13 @@
 
         public static ushort CheckParameterAndThrowException2(ushort s)
         {
-            // TODO 4-2. Add the code to throw the ArgumentException if the i argument equals zero.
+            // TODO 4-2. Add the code to throw the ArgumentException if the s argument equals zero.
             return s;
         }
 
         public static long CheckParameterAndThrowException3(long l)
         {
-            // TODO 4-3. Add the code to throw the ArgumentException if the i argument is even.
+            // TODO 4-3. Add the code to throw the ArgumentException if the l argument is even.
             return l;
         }
 
