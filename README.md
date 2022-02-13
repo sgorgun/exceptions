@@ -212,7 +212,7 @@ public static bool CheckParameterAndThrowException1(object o)
 
 Open the [ThrowingArgumentNull.cs](Exceptions/ThrowingArgumentNull.cs) file, and navigate to the [CheckParametersAndThrowException2](Exceptions/ThrowingArgumentNull.cs#L11) method.
 
-Add the _if_ statement to test if both _o1_ and _o2_ arguments are not _null_, and throw the _ArgumentNullException_ when any of the method arguments is null.
+Add the _if_ statement to test if _o1_ or _o2_ arguments is _null_, and throw the _ArgumentNullException_ when any of the method arguments is null.
 
 The _ArgumentNullException_ class has a [constructor with two string parameters](https://docs.microsoft.com/en-us/dotnet/api/system.argumentnullexception.-ctor?view=net-6.0#system-argumentnullexception-ctor(system-string-system-string) that allows to specify an error message:
 
@@ -227,7 +227,7 @@ Usually having an error message is not needed for an _ArgumentNullException_, be
 
 Open the [ThrowingArgumentNull.cs](Exceptions/ThrowingArgumentNull.cs) file, and navigate to the [CheckParametersAndThrowException3](Exceptions/ThrowingArgumentNull.cs#L17) method.
 
-Add the code to test if the method arguments (_integers_, _longs_ and _floats_) are not _null_, and throw an _ArgumentNullException_ when any of the method arguments is null.
+Add the code to test if the method argument (_integers_, _longs_ and _floats_) is _null_, and throw an _ArgumentNullException_ when any of the method arguments is null.
 
 
 #### Subtask 2-4
