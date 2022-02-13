@@ -12,7 +12,7 @@
         {
             errorMessage = null;
 
-            // TODO #5-2. Add the try-catch statement to catch an exception of ArgumentOutOfRangeException type. If an ArgumentOutOfRangeException is thrown, assign rrorMessage parameter to the exception's error message and return "K139".
+            // TODO #5-2. Add the try-catch statement to catch an exception of ArgumentOutOfRangeException type. If an ArgumentOutOfRangeException is thrown, assign errorMessage parameter to the exception's error message and return "K139".
             return DoSomething(i, o, s);
         }
 
